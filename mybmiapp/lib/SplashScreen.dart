@@ -91,13 +91,13 @@ class _SplashScreenState extends State<SplashScreen>{
           child: Visibility(
             visible: box2Visibility,
             child:AnimatedContainer(
-          
+          curve: Curves.easeInBack,
           duration:Duration(seconds: 2),
           width: _width1,
           height:_height1,
           
           decoration: BoxDecoration(
-            color: Colors.red,
+            // color: Colors.red,
             borderRadius: BorderRadius.circular(20),
             image: DecorationImage(
               image: AssetImage('assets/images/bmiImage2.jpg'),
@@ -116,14 +116,14 @@ class _SplashScreenState extends State<SplashScreen>{
           child: Visibility(
             visible: box1Visibility,
             child: AnimatedContainer(
-          
+          curve: Curves.easeInBack,
           duration:Duration(seconds: 2),
           
           width: _width,
           height: _height,
           decoration: BoxDecoration(
-            color: Colors.green,
-            borderRadius: BorderRadius.circular(20),
+            // color: Colors.green,
+             borderRadius: BorderRadius.circular(20),
             image: DecorationImage(
               image: AssetImage('assets/images/bmiImage1.jpg'),
               fit:BoxFit.cover,

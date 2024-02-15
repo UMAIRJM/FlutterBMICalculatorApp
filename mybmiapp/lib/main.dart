@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:mybmiapp/SplashScreen.dart';
+import 'package:mybmiapp/WelcomeScreen.dart';
 
 void main() {
   runApp(MyApp());
@@ -15,7 +16,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: SplashScreen(),
+      home: WelcomeScreen(),
     );
   }
 }
