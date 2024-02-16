@@ -1,17 +1,35 @@
   import 'package:flutter/material.dart';
 import 'package:mybmiapp/MeasurementsScreen.dart';
 
-  class WelcomeScreen extends StatelessWidget{
-    var name = '';
+class WelcomeScreenState extends StatefulWidget{
+  @override
+  State<WelcomeScreenState> createState()=> WelcomeScreen();
+}
 
+
+
+
+
+
+class WelcomeScreen extends State<WelcomeScreenState>{
+    var name = '';
+    bool errorVisibility = false;
     var textFieldController = TextEditingController();
     @override
     Widget build(BuildContext context){
       void myButtonOperation(){
+        
         var params = textFieldController.text.toString();
+        if(params != ''){
         Navigator.push(context, MaterialPageRoute(builder: (context){
-          return MeasurementsScreen(params);
+          return MeasurementsScreenState(params);
         }));
+        }else{
+          errorVisibility = true;
+          setState(() {
+            
+          });
+        }
     }
 
       return Scaffold(
@@ -54,6 +72,9 @@ import 'package:mybmiapp/MeasurementsScreen.dart';
                   ),
                   ),
                 ),
+                Visibility(
+                  visible: errorVisibility,
+                  child:Text('Please enter name to move forward',style: TextStyle(fontSize: 15,color: Colors.red,fontWeight: FontWeight.bold),),),
                 SizedBox(height: 20),
                 Container(
                   width: 300,

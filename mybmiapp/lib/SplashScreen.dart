@@ -44,7 +44,7 @@ class _SplashScreenState extends State<SplashScreen>{
             box3Visibility = true;
           }
           else if(counter == 5){
-               Navigator.pushReplacement(context, MaterialPageRoute(builder: (context)=> WelcomeScreen()));
+               Navigator.pushReplacement(context, MaterialPageRoute(builder: (context)=> WelcomeScreenState()));
      
 
           }
