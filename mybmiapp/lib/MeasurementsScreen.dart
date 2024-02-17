@@ -65,10 +65,32 @@ class MeasurementsScreen extends State<MeasurementsScreenState>{
       var _height2 = heightTextController2.text.toString();
       
       if(_height != '' && _weight != '' && ((_height  != '' && _height2!='' )|| radioButtonGroupValue == 1) ){
+        if(radioButtonGroupValue == 1){
+          double converter= 0;
+          converter = double.parse(_height);
+          converter = converter/100;
+          _height = converter.toString();
+        }
+        else if(radioButtonGroupValue == 2){
+          double converter1 = double.parse(_height);
+          double converter2 = double.parse(_height2);
+          double answer = 0;
+          converter1 = converter1 * 0.3048;
+          converter2 = converter2*0.0254;
+          answer = converter1 + converter2;
+          _height = answer.toString();
+        }
+        if(radioButtonGroupValue1 == 3){
+          double converter = double.parse(_weight);
+          converter = converter*0.453592;
+          _weight = converter.toString();
+          
+        }
         Navigator.push(context, MaterialPageRoute(builder: (context){
-        return Dashboard();
+        return Dashboard(_height,_weight,userName);
       }));
-
+    //formula for bmi =  weight in kg /square of height in meteres so we need  to convert  height and weight in kgs and meters
+     
       }
       else{
         heightTextController = TextEditingController();

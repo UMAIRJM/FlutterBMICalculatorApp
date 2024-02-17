@@ -35,8 +35,8 @@ class _SplashScreenState extends State<SplashScreen>{
               box2Visibility = true;
             }
           else if (counter ==3){
-            _width1 = 20;
-            _height1 = 20;
+            _width1 = 560;
+            _height1 = 900;
           }
           else if(counter == 4){
 

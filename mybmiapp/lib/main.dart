@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:mybmiapp/MeasurementsScreen.dart';
 import 'package:mybmiapp/SplashScreen.dart';
 
 
