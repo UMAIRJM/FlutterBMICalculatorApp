@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:mybmiapp/Dashboard.dart';
+import 'package:mybmiapp/DietPlansScreen.dart';
 import 'package:mybmiapp/SplashScreen.dart';
+import 'package:mybmiapp/WelcomeScreen.dart';
 
 
 void main() {
@@ -16,7 +19,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: SplashScreen(),
+      home: DietPlanScreen(),
     );
   }
 }

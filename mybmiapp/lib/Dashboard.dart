@@ -53,6 +53,7 @@ class _DashboardState extends State<Dashboard>{
   }
   
   var bmiText  = bmi.toStringAsFixed(2);
+  var weightText = double.parse(_weight).toStringAsFixed(2);
     return Scaffold(
       appBar: AppBar(
         title: Text('Welcome $username ',style: TextStyle(color: Colors.white),),
@@ -142,7 +143,7 @@ class _DashboardState extends State<Dashboard>{
                                   Icon(Icons.line_weight,size: 40,),
                                     Text('Your weight',style: TextStyle(fontSize: 22,fontWeight: FontWeight.bold),),
                                 
-                                  Text('$_weight kgs',style: TextStyle(fontSize: 22,fontWeight: FontWeight.bold),)
+                                  Text('$weightText kgs',style: TextStyle(fontSize: 22,fontWeight: FontWeight.bold),)
                                 ],
                               ),
                             ),
@@ -229,7 +230,7 @@ class _DashboardState extends State<Dashboard>{
                             mainAxisAlignment: MainAxisAlignment.center,
                           children:[
                             Icon(Icons.calculate),
-                            Text('BMI Calculator'),
+                            Text('Weight Calculator'),
                           ],
                         ),
                           )
@@ -257,7 +258,7 @@ class _DashboardState extends State<Dashboard>{
                             mainAxisAlignment: MainAxisAlignment.center,
                           children:[
                             Icon(Icons.calculate),
-                            Text('BMI Calculator'),
+                            Text('Height converter'),
                           ],
                         ),
                           )

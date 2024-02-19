@@ -43,13 +43,15 @@ class WelcomeScreen extends State<WelcomeScreenState>{
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
+                Text('BMI calculator',style: TextStyle(fontSize: 40,fontWeight: FontWeight.bold,),),
+                SizedBox(height: 10,),
                 Icon(Icons.fitness_center,size: 100,color:Colors.blue),  
                 SizedBox(height:30),
                 Container(
                   width: 300,
                   height: 50,
                   decoration: BoxDecoration(
-                    borderRadius:BorderRadius.circular(150),
+                    borderRadius:BorderRadius.circular(10),
                     border: Border.all(
                       width:1,
                       color: Colors.black,
@@ -75,7 +77,7 @@ class WelcomeScreen extends State<WelcomeScreenState>{
                 Visibility(
                   visible: errorVisibility,
                   child:Text('Please enter name to move forward',style: TextStyle(fontSize: 15,color: Colors.red,fontWeight: FontWeight.bold),),),
-                SizedBox(height: 20),
+                SizedBox(height: 40),
                 Container(
                   width: 300,
                   height: 50,
