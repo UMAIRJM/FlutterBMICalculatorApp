@@ -1,0 +1,2637 @@
+this is my flutter learning notes
+==========================================
+
+command for running flutter in my mobile chrome browsser terminal "flutter run -d web-server --web-hostname 192.168.1.115"  //this is ip address of my pc
+
+
+command to  run flutter app on my mobile  phone ip using visual studio
+
+flutter run -d web-server --web-hostname 192.168.1.115
+----------------------------------------------------------------------------
+
+Flutter is used to build native cross platform (web,IOS,Andriod )
+Application using single code base or platform
+
+native Environment
+-------------------------
+Native environmen is in which we used certain core languages to build aplication
+for  that platform for example native andriod languages for building 
+Andriod application
+
+Hybrid Environment
+----------------------
+In whichc we  use blend solutions consist of both native and web solution
+means by using this we can create an application that can also run on 
+native mobile platform and by using blend mixture  of (HTML  ,CSS ,JS)
+we can also blend same application to website when we want to run it 
+on browsers
+
+example of native XCode for development Swift for building ios application
+example of cross platform included react native anf Flutter
+example of hybrid included Visual studio as we have created a environment
+of  MERN stack while creating website on visual studio is hybrid example
+
+Raised button (button with shadow)
+in flutter this raised button will automatically work on different environments
+like IOS and andriod according to its needs of platform becasue it has its own 
+rendering engine that handle it own every pixel due to its own rendering engine
+we dont have to face many cross platform UI redering issues.
+
+Programming Language used in flutter
+-------------------------------------
+
+Only one langage is used in flutter that is dart
+handling database ,backend ,frontend,designing UI All can be done using one
+language Dart.
+
+Flutter Architecture
+--------------------------
+Widgets
+----------------------
+Flutter is all about widgets
+whenever we create flutter application we create sometime of widgets tree
+where all widgets are connected to each other in form of tree.
+
+(component = widget ) in flutter
+
+in case of creating UI in flutter we basically create tree of widget
+
+one widget can contain wdigets in it and other widget can contain multiple 
+widgets in them so it is all about widgets and creating your own widget tree
+
+
+our app is also a widget in flutter.
+
+screenshot of widget tree for app bar and scaffold is saved on phone.
+
+In flutter development environment quite resembles  with react native as same file
+we are designing the UI and implementing the logic
+
+dart is mixture of java c# and javascript
+
+flutter installation
+----------------------
+
+install flutter SDK (software development kit)
+
+after installing flutter SDK go to  its  bin folder and copy address
+
+noww set this url in envirments variables
+
+after setting environment variable open cmd and type flutter 
+
+if installation go well it will show all commands that we can use in flutter
+
+after that type "flutter doctor" command this will tell us whether our 
+system contain all tools for developing and getting started with flutter
+
+if you enocunter any error in "flutter doctor "  commands resolve all errors
+once  resolved now you can start building your flutter applications
+
+Visual code
+----------------
+for running flutter app on visual studio code we need to install
+two extensions named dart and flutter 
+
+after installing these extensions open flutter project in visual studio 
+it will be running
+
+----------------------------
+Flutter project creation.
+-------------------------
+
+for creating a project in flutter we have to open cmd
+
+and in cmd type following command
+flutter create APP_Name
+
+it will create yourr flutter app
+
+we can also create flutter app in IDE like in andriod studio also
+
+now open this folder in any of the IDE and locate to main.dart file
+which is central file of flutter 
+
+and run your project on virtual or physical device
+
+folder structure for flutter project
+-----------------------------------------------
+.idea
+------
+contain all information related to code editor and flutter platform no need to manually
+changeanything here
+
+andriod
+-----------
+if we want to use certain native feature of anriod that is only specifically 
+created for andriod if we want to use  that feauture or setting so for that
+thing we will need andriod folder
+
+ios
+----
+platform specific folder for ios same usage as of andriod folder if we need to 
+use specific feature or native setting of ios than we will need this folder
+
+build
+---------------
+that build that contain final executable file like .apk file that is runnign
+on certain platform so build folder contain build of our app
+
+lib
+---------
+most important folder of flutter app
+
+contain all files we will create for our flutter project
+
+it is main folder that contain all files or flutter code files in it
+
+lib is also main entry point of our app as it has main.dart file
+
+test
+-------
+automation testing 
+
+for testing our app like performance testing etc
+all files of test cases that we need to run in our app in order to 
+check whether our app is good to go all files related to app testing 
+go to this test folder
+
+.gitignore
+-----------
+
+we already know  about gitignore
+
+while pushing our project on git so the unnecessary or large files can be 
+marked in gitignore app so git repository can ignore certain files 
+
+.metadata
+--------------
+
+all manual or  local data 
+
+we dont need to manually change or manage this folder it will be automatically 
+managed by our IDE
+
+.packages
+-------------
+
+will contain all information related to predifined packages or user defined
+packages that we will used in our flutter application
+
+same woking as paackage.json file in react or nodejs applications
+
+pubspec.yaml
+----------------
+all app related things like font changes library usages image heading etc
+all these things are declared in this file
+
+after making changes in this file we need to call
+
+"pub get"  to apply all local changes like font in all over the app
+
+it is also importat file as it  requiered all pre decalred things we 
+will use in our app
+
+pubspec.lock
+--------------
+
+it is like package.lock.json file
+
+it is created once we run "pub get" to run pubspec.yaml file
+
+once it is created it contain all information of packages or other things
+in it that are declared in pubspec.yaml file
+
+readme.md
+--------------
+
+contain all information we  want to store  in it so we can rember what we 
+did  in specific repository of our application	
+
+
+quik introduction to Dart
+------------------------------------
+
+flutter is framework in this framework the language we use  in order to achieve basic
+logic and uctionalities we use dart.
+
+in other framework we have multiple languges for UI ,frontend ,logic  funtionalities
+backend we have differnet languges but unlike other framework in flutter we only have
+to use dart
+
+UI and UX
+------------
+UI user interface ==> better designs
+UX user experience ==> where we are building strong logic andalgorithms we are making our UX 
+better
+
+Dart language
+------------------
+
+Object oriented and strongly typed
+DEveloped by google in 2011
+A mixture of Javascript,Java,
+
+in dart we have use of  async and await for asynchoronous programming
+
+dart is one of very few languages that us well suited to being compilled  both
+AOT(Ahmead of time) and JIT(just in time) supporting noth kinds of compilation provides 
+significance advantages to dart
+
+AOT and  JIT are compilers whenever we write a code we write set of instructions 
+that are compiled by compiler on runtime in flutter we have combination of two
+compile AOT and JIT with help of which we can achive features like hot reloading and
+cold reloading.
+
+JIT provides hot reloading when we make changes in certain screnn we dont need to reload all app
+we can see change on that screen by ctrl + s so JIT is helpful for runtime during devloping the app.
+
+AOT is helpful when we make build apk file AOT compile all code of our app and make it
+available  after installing the app.
+
+? operator in dart and  other programming languages
+------------------------------------------------------
+? = null check opertor
+example if we declare  a variabel
+
+int a;
+print (a);
+
+it will give me error that cannot use or print variable without its  value
+
+but if I do this
+
+int ? a;
+print(a);
+
+now in this case even we dont have value of a still it will not give error 
+it will display null so this is where we can use ? operator in our programs
+
+
+.toString() is used to convert any number to  string
+.parseInt() is used to convert any string to integer or other 
+
+--------------------------------------------------------------
+
+flutter dynamic vs Vars
+---------------------------
+String name = "umair";
+
+but is var we dont need to mention datatype the var automatically detects the datatype
+it detects while declaration of first time
+
+example
+---------
+
+var name = 'umair';
+
+now in this case name will be explicitly detect datatype string and will now consider name
+as string we dont need to implicitly declare the datatype of var variable
+
+another case 
+-----------
+as we know that var is dynamic variable
+
+if we declare variable like this
+
+var name;
+
+initially we dont provide data to variable so its does not detect datatype
+
+so if we give its value
+
+name = "umair"
+
+and 
+
+name = 157 //basically it should give error if we initialized varible  while declaration
+however in this case it will get it dynamic form and it will accept integer and other 
+datatype as well
+
+so this is  the concept of dynamic type of variable
+
+so dynamic variable can also be declared as 
+
+dynamic  name;
+-----------------------------------------
+
+
+Functions and their uses in dart
+---------------------
+
+class Human{
+  //constructor
+  Human(){
+    print("Human is created");
+  }
+  int myNameprinting(var name){
+  var name2 = name;
+  for(int i = 0;i<10;i++){
+    print("My name is $name2");
+  }
+  return 5;
+}
+
+}
+
+//Dart variables and datatypes are same as we have used and studied in other 
+//programming languages
+
+
+//In dart  we use collection if we neeed to store multiple values
+
+//in dart we have two type of collections which are list and hashmap
+
+//dart functions
+
+void myNameprinting(var name){
+  var name2 = name;
+  for(int i = 0;i<10;i++){
+    print("My name is $name2");
+  }
+}
+--------------------------------------------
+
+lists in dart concept
+--------------------
+list
+---------
+collection of multiple data maybe similar datatype or different datatype
+
+var list1 = [10,20,30,40,50];
+
+list have similar  funcitonalities as arrays in other programming languages
+
+list are of two types growable and fixed size
+
+in growable  list we dont need to mention size of list while declaration
+
+while in fixed list we declare size of list while declaration
+
+Simple  functions of list:
+----------------------------
+ var myList = [10,20,30,40];
+  myList.add(60);
+
+  var myList2 = [];
+  myList2.addAll(myList);
+
+myList2.insert(index,data);
+
+myList2[index] = data;
+myList2.insertAll(indexWhereFirstItemLies,data);
+
+myList2.removeLast();
+myList2.removeAt(index);
+myLisr2.removeRange(startIndex.endingIndex);	
+myList2.length();
+myList2.reversed();
+myList2.first();
+myList2.last();
+myList2.isEmpty();
+myList2.isNotEmpty();
+ETC
+
+
+so list works pretty like arrays in other programming languages
+--------------
+
+Flutter Dart Maps and hash maps
+---------------------------------
+
+maps in dart
+--------------------
+the one of the main use of map in dart is that data is stored in referenced
+with keys we can add dataa with reference of key and in order to retrieve data
+we need to use  keys
+
+and keys should be unique
+
+var map_name = {key1:value1,key2:value2------};
+
+map is just like object in react and python and other programming languages it
+serves the functionalities if oject
+
+var map_names = {
+	'key1':'umair',
+	'key2':'zubair',
+	'key3':5,
+}
+
+print(map_name['key1']);
+
+declaration without initialization
+
+var myNames= Map();
+
+some builtin functions for map
+
+mapName.isNotEmpty() //will return boolean
+mapName.isEmpty()
+mapName.length
+mapName.keys
+mapName.values
+mapName.containsKey(key);
+mapName.containValue('false')
+Etc
+-----------------------------
+
+Difference between final and const
+---------------------------------
+
+final name = 'Raman';
+
+now we cannot reset or set this value as it is final variable it data remain same
+as initialized while declaration or first time
+
+final String name = 'Umair';
+
+const int number = 55;
+
+while delaring constant it should be initilized while decalring it as it is the requirementt 
+of const keyword we cannot do this
+
+const variable; Error!!!!!!!
+varialble = 55; it is wrong!!!!!!!
+
+we need to initialize the const varable inline while declaration
+
+NOtes!!!!!
+------------
+main difference between final and constant is that the we can make changes in data 
+in list of final but cannot add another data however on constant list we cannot change 
+the data which is being declared as we know py is contant and its value  is 3.14
+that cannot be changes same  is the case with constant list in dart  we cannot add another
+data and we cannot change the already decalred data as it is constant const keyword cannot 
+be override however we can override list of final runtime of  program.
+
+----------------------------------
+Published
+--------------------------------
+
+
+conditions in dart
+------------------------
+
+conditions and conditional operators syntax of dart is same as of C and javascript
+
+loops in dart
+------------------
+
+for (int i = 0;i<10;i++){
+	print("umair");
+}
+
+int counter = 10;
+while(counter >0){
+	print("umiar");
+	counter --;
+}
+
+int coounter = 10;
+do{
+	print("umair");
+}while(counter>0)
+
+//do while will run first time without checking the condition so our loop will minimum
+run for 1 time even our condition is false this is the differnce.
+
+enhanced for loop
+---------------
+especially can be used for visiting elemment of list
+
+in enhanced for loop our loop visit each and every element of array and stored that specific
+visited element temporarily in a variable we provide in condition of the loop
+
+syntax of  enhanced for loop
+
+var myList = [1,2,3,4,5,6,7]
+
+for(var items in myList){
+	print("$items");
+}
+
+so this  is how enhanced for loop works
+------------------
+===================================================
+Flutter
+===============================================
+Finally after full dart exercise now we are on flutter widgets
+
+Flutter Widgets
+-------------------
+
+initial points on widgets
+---------------------------
+
+its is a widget that combine common painting ,positioning,sizing and designing of  child 
+widgets.
+
+it is also a calss to store one or more widgets and position them on the scrreen
+according to our needs
+
+generally it is similar to a box for storing content
+
+it  allows many attributes to  the user for  decorating its child  widgets
+such as using margin which seperated the  container with other contents.
+
+widget is just like a invisible block we can say it is pretty same as view in React and div in HTML
+
+just like views and div we can have childs in widgets and containeer etc
+
+the views like widget in Flutter is "containeer"
+
+what is containeer widgets and how to use it
+-------------------------------------------------
+
+containeer widget is just like empty box in flutter we can add child componenets in it
+and manage those child components and design them
+
+containeer basic syntax:
+------------------------
+
+box: containeer(
+	height:10,
+	width:20,
+	color:Colors.orange,
+	//below is the line that add child component text in containeer	
+	child:Text("this is my containeer"),
+),
+
+
+center widget
+--------------------
+
+if we want to center any widget in to center of space so we can wrap that certain widget 
+with center widget so center containeer will center that specific wrapped widget
+
+example
+
+
+Center(
+	child:Containeer(
+		child:Text('This is centered text',style:textStyle(fontSize:25))
+	)
+)
+
+//in above example container is  in center but text inside container is not centered
+so inoredr to make that text inside container centered we will do apply center on text
+
+Example
+----------
+Center(
+	child:Containeer(
+		child:Center(
+			child:Text('This is centered text',style:textStyle(fontSize:25))
+		)
+		
+	)
+)
+
+
+Flutter Widgets Text Styles Widgets
+--------------------------------------------
+
+Text('Text we want to show in our text widget',style:TextStyles(fontSize:25,color:Colors.white,fontWeight:fontWeight.bold,backgroundColor:Colors.Orange))
+
+How to  use custom font in our  APP....?
+-------------------------------------
+
+
+All types of button in Flutter:
+---------------------------------------
+
+types of main button:
+
+==>text Button(Flat Button)
+==>Elevated Button (Raised Button)
+==> Outlined BUtton
+
+button example
+----------------------
+
+body: TextButton(
+	child:Text('Click Me')
+	onPressed:(){
+		print("Button Clicked")
+	},
+	onLongPress:(){
+		print("button is pressed for  long time")
+	}
+)
+
+same is the case for Elevated button and outlined buttons
+
+Adding images in Flutter Applications
+--------------------------------------------
+
+for better approach just like  other frame works also create a assest folder in root directory
+of flutter application in case you want to use images and other resources in your 
+Application.
+
+.jpg with background
+.png without background
+.svg icons 
+
+
+As we created new folder and added additional images in this case whenever we add some
+additonal packages or  assets to application we need to go to pudspec.yaml file to get new changes
+
+We need to be careful for identation in pubspec.yaml file while uncommenting new 
+added path of folder it sshould be in identation 
+
+like
+assests:
+  - assests/images/
+
+These above two lines will include all images presend in our images folder in yaml file
+
+after making all these changes we will get option names "Pubsget" click that option it
+will synchronize and made newlu added folder manageable from all application 
+
+so in order to load image we use Image widget
+
+body: Image.asset('Address/to/Image.png') 
+
+we can manage this images size by making image child of containeer and set the size 
+of  containeer and other methods
+
+so in this way we can manage widgets in flutter
+
+
+Columns and Rows in flutter
+----------------------------
+dont forget: Flex  is very important in all frameworks like mern stack and react.
+
+Column and Rows are very very important for arranging and design whole layout and 
+widgets
+
+row is used to arrange widgets horizontally
+
+columnn widgets are used to arrange widget vertically
+
+Noter
+-----
+Column and rows quite similar with flex  direction I have used in my react application
+and div in HTML for designing  layouts only difference is in name in flutter we can use them
+using row  and column
+
+row => main Axis = horizontal && cross Axis = vertical
+Column => main Axis = vertical && cross Axis = horizontal
+
+
+code for  row and column
+-------------------------------
+in other widgets we have only child  attribute to  make only one child however
+in row and column atttribute we have children option we can make multiple childs here
+
+body:Column(
+	children:<Widget>[
+		Text('A')
+		Text('B')
+		Text('C')
+		Text('D')
+		Text('E')
+	]
+)
+children:<Widget>[] we can mention type of array of children or if we dont mention it in that
+case we will not get any error
+
+So it will display A,b,c,d,e in vertically in our screen
+
+same is the case with row
+
+body:Row(
+	children:<Widget>[
+		Text('A')
+		Text('B')
+		Text('C')
+		Text('D')
+		Text('E')
+	]
+)
+
+note:
+---------
+Most of the widget name and other main components name in flutter Start with Capital letter
+camel case
+
+DEsign of special layout that was given in youtube course screen shot in folder img1 named
+
+body: Container(
+	child:Row(
+		children:<Widget>[
+			Container:(
+				child:Column(
+					childern:[
+						Text:('Strawberries Perries',style---),
+						Text:('Additional Text')
+						Containeer:(
+							child:Row(
+								children:[
+									Text()
+									Text()
+									Text()
+								]
+							)
+						)
+					]
+				)
+			)
+			Image.asset('Adress/to/Image.png'),
+		]
+	)
+) 
+
+there are many other ways also
+
+we have attributes mainAxisAlignment and crossAxisAlignment in column and row widget
+in order to design and manage our alignment
+
+Example
+-------------
+
+body:Row(
+	mainAxisAlignment: MainAxisAlignment.spaceEvenly,MainAxisAlignment.spaceAround,MainAxisAlignment.andManyMore---------etc
+	crossAxisAlignment:CrossAxisAlignment.center,CrossAxisAlignment.end,CrossAxisAlignment.start--------etc
+	
+)
+
+INKWELLWidget
+------------------------------
+
+for understanding inkwell widget suppose we have to apply onClick on widget where
+we dotn have default click option just like button has by default onPress
+
+so inorder to achieve that functionality like if we want to apply onClick function 
+on imgage widget we will need INKWELL widget
+
+REact tales in react we use touchableOpacity to use and handle these kinds of things.
+
+Inkwell make us use onClick function in any of the flutter widget whenever it is tapped
+by user.
+
+INKWELL has certain attribute
+-->onTap
+-->onLongPress
+-->onDoublePress   etc
+
+practical code  examples on inkwell
+------------------------------------
+
+body:Container(
+	child:ElevatedButtotn(
+		child:Text('Click me')
+		onPressed:(){print('clicked on button');}
+	)
+)
+
+//but above is button that has by default on tap option but what if we need to apply onClick o
+any other widget so than we use inkwell widget
+
+body:Center(
+	child:InkWell(
+		onTap(){
+			
+		},
+		onDoubleTap(){}, //and many more attribute now we only want to make widget child of inkwell which we want to get tapped
+		onLongPressed(){},
+		child:Container(
+			width:100,
+			height:100,
+			color:Colors.red,
+	)
+
+	
+	)
+	
+)
+
+now  if we want  to apply onClick on above centered container we will apply inkwell
+option here.
+
+so this is how we can use inkwell and make non tapped widgets tappable in Flutter
+by making those widgets child of inkwell.
+
+Scrolllview and its types
+---------------------------------
+
+when we are rendering something haveing more width pr height than acoutual bounds of
+screen in this scene we will have error rendering error out of bounds so in this case
+we will use scroll view with our widget.
+
+So in order to  show all content in our screen we will use scrollViews
+
+scrollview  implementation
+
+body:Column(
+	children:[
+		Contaainer:(height:100,width:100,color:Colors.red,margins:EdgeInsets.only(bottom:11)),
+		Contaainer:(height:100,width:100,color:Colors.red,margins:EdgeInsets.only(bottom:11)),
+		Contaainer:(height:100,width:100,color:Colors.red,margins:EdgeInsets.only(bottom:11)),
+		Contaainer:(height:100,width:100,color:Colors.red,margins:EdgeInsets.only(bottom:11)),
+		Contaainer:(height:100,width:100,color:Colors.red,margins:EdgeInsets.only(bottom:11)),
+	]
+)
+
+//now with above code we will get error of contentout o bound and rendering error so toovercome this we
+will wrap this wwith scroll view so that all containeer can be viewed
+
+body:SingleChildScrollView(
+	child:Column(
+		children:[
+			Contaainer:(height:100,width:100,color:Colors.red,margins:EdgeInsets.only(bottom:11)),
+			Contaainer:(height:100,width:100,color:Colors.red,margins:EdgeInsets.only(bottom:11)),
+			Contaainer:(height:100,width:100,color:Colors.red,margins:EdgeInsets.only(bottom:11)),
+			Contaainer:(height:100,width:100,color:Colors.red,margins:EdgeInsets.only(bottom:11)),
+			Contaainer:(height:100,width:100,color:Colors.red,margins:EdgeInsets.only(bottom:11)),
+		]
+	)
+)
+
+now above content are scroll able
+
+in flutter if we dont apply custom width to our child so it will automatically 
+get the width of its child until custom witdht is applied.
+
+we can also apply horizontal scrollview to components so that they can be scrollable
+horizontally.but in case of scrolling horizontally we need to set scrollDirection attribute
+of  SingleChildScrollView
+
+it will be like
+
+SingleChildScrollView(
+	scrollDirection:Axis.horizontal
+)
+
+if we dont give scroll direction by  default it is vertical.
+-----------------------------------
+
+List View and its component in Flutter
+-----------------------------------------
+
+As we know flatList and section list was very important components of react for rendering
+list of data
+
+in case of Flutter we use ListViews
+
+in listviwes scroll is get enabled automatically when content is more than pixels
+we dont need scroll view.
+ 
+by default list is vertically aligned
+
+body:ListView(
+	scrollDirection:Axis.vertical,
+	reverse:true,
+	children:[
+		Text:("One"),
+		Text:("Two"),
+		Text:("Three"),
+		Text:("Four"),
+	]
+)
+
+but above list is just hard added but what if we have data from API how we will render
+in our list so fot this in react we use flat list list renderer but in here we 
+will use ListView.builder in which we will tell how our one list item will look
+basically we will give structure of one list item and will pass array in it then our
+builder will render each item of array in lis just like flatlist and section list do in react.
+
+
+var names = ['umair','mehmood','zubair','Afzal','Ali'];
+
+body:ListViews.builder(itemBuilder:(context,index){
+		return Text(names[index],style:TextStyle(fontSize:30,));
+	},
+	itemCount: names.length,
+	itemExtent:100,
+	scrollDirection:Axis.vertical,
+)
+
+in addition of lisst views builder we also have listViews.seperated
+
+body:ListViews.seperated(itemBuilder:(context,index){
+		return Text(names[index],style:TextStyle(fontSize:30,));
+	},
+	itemCount: names.length,
+	scrollDirection:Axis.vertical,
+	seperatorBuilder:(context,index){
+		return Divider(height:100,thickness:2);
+	}
+)
+
+
+so seperated is used to divide two item of list if we want to add something after 
+or between each list item like divider or bottom border we can add that in seperator builder
+function as mentioned above. 
+
+What does Main.Dart Contains. initial default code explanation
+===============================================================
+
+void main(){
+	runApp();
+}
+
+void main function in dart file is ignittion point of our flutter app
+
+we have a function in dart runApp(pass class name) by using which we can run our app by building it.
+
+we have two type of class material UI for native andiod  platform components and cupertino for ios
+we can add condition to check our app running OS is andriod or ios in our ignition point and select 
+respective library according to Opearting system.
+
+we use extends keyword in oop for inheritance of parent class funciton in child class
+so in order to pass app class in runAPP function we must make class that should extend
+one of parent pre build class of flutter like StateLessWidgets or StateFullWidget etc.
+
+abstaract function in parent class of  inheritance.... Abstract function is  declared in
+parent classs that should be used in child class whether you need to use it or not you must redecalre
+that abstract function in our children classes it is necessary.
+
+for redeclaring abstract method  in our child class we use  @overrid keyword
+
+void main(){
+	runAPP(FlutterApp());
+}
+
+//in StatlessWidget we have a abstract function build which we need to override in our  child class
+
+class FlutterApp extends StatelessWidget{
+
+@override
+Widget build(BuildContext context){
+	return MaterialApp(
+		debugShowCheckedBanner:false,
+		title:"Flutter APP",
+		theme:ThemeData(
+			primarySwatch:Colors.blue,
+		),
+		home:DashBoardScreen(),
+	//home attribute Want the starting page or screen of our app from where our app will be 
+//started so in order to set home we again need to create a class that will contain all UI element and
+//funcitonality of our starting screenor entry point of our app. So we need to create anotheer class for it. 
+	)	
+
+	throw UnimplementError();	
+	}
+
+}
+//so above class is pretty rigid it will take title of app main theme and starting  point or entry point of app
+main class is below that will allow us to create UI designs of our screen using Scafffold widget so further designning is below
+ 
+
+class DashBoardScreen extends StatelessWidget{
+	@override
+	widgets build(BuildContext context){
+	return Scaffold(
+		//Scaffold has many attributes but important are appbar and body body contains all widgets and ui elements
+		appBar:ApppBar(
+			title:Text("Dashboard"),
+		),
+		body:Container(
+			height:10,
+			weight:10,
+			color:Colors.red,
+		)
+	)
+}
+}
+//Now we have created entry point now we need to provide this DashBoardScreen class to home 
+in flutterApp class to tell home:DashBoardScreen  enry point of App.
+
+
+// so above is basic implementation that how we can start our flutter app main.dart class app from zero
+it is basic code to how we can create and design class for dlutter app screens.
+
+
+How we can add decoration to container
+-----------------------------------------------------
+
+here we will discuss something about designning of widget of Flutter
+
+body : Container(
+	heright:double.infinity,
+	width:double.infinity,
+	//double.infinity will get this containeer max available height and widdth to this container
+	child:Center(
+		child:Container(
+			width:100,
+			height:100,
+		)
+	)
+	
+)//now second container will appear center of first container
+
+for decorating any of the container  we can use "decoration" attribute of container
+So by use of decoration we can add multiple design like alignment radius width and etc
+design attribute to any of the container I think.
+
+
+container(
+	width:100,
+	height:100,
+	decoration:BoxDecoration(
+		color:Colors.gray,
+		borderRadius:BorderRadius.circular(75),
+		//circular will apply on al edges of border so in case of certain edges we will use only
+		borderRadius:BorderRadius.only(topLeft:Radius.circular(21),bottomRight:Radius.circular(21)),
+		borderRadius:BorderRadius.all(),
+		//for designinng  border,
+		border:Border.all(
+			width:2,
+			color:Colors.gray,
+		),
+		boxShadow:[
+			BoxShadow(
+				blurRadius:51;
+				color:Colors.grey,
+				spreadRadius:7,	
+			)
+		],
+		shape:BoxShape.circle,
+		//if we want  to  use shape then we must not use BorderRadius.circular we can only use one from these
+
+			
+	)
+)
+//so this is how we can design our container using decoration attrubute
+
+------------------------------------------------
+Expanded Widget
+-----------------
+
+so when we use column and row we use  multiple widgets wo in these case we will get some of space empty
+so for this purpose we use expanded widget that will automatically cover all available  area.
+
+code implementation
+------------------
+body:Row(
+	mainAxisAlignment:MainAxisAlignment.center,
+	children:[
+		Container:(
+			height:10,
+			width:10,
+			color:Colors.red,
+		),
+		Container:(
+			height:10,
+			width:10,
+			color:Colors.blue,
+				
+		),
+		Container:(
+			height:10,
+			width:10,
+			color:Colors.green,
+				
+		),
+		Container:(
+			height:10,
+			width:10,
+			color:Colors.black,
+				
+		),
+		Container:(
+			height:10,
+			width:10,
+			color:Colors.orange,
+				
+		),
+	]
+)
+
+
+so  in above case  all container are in center so we have empty available space at
+start of containers and end of containers so we can make first and last container expandable
+so they can cover automatically extra available space available to them.
+
+soin order to make starting and ending container or any other container to fill avaliable sooace
+we will wrap that certain widget with expanded we can also give ratio to tell container how many space it should
+covers.
+
+Expanded:(
+	child:Container(
+		width:10,
+		height:10,
+		color:Colors.red,
+	)
+)
+
+if we want to apply certain container with more space than other and want some container to be equally soaced
+so in this case we will use expanded widget with ratio.
+
+so we can apply ratio to container using flex attribute in expanded attribute
+
+Expanded:(
+	flex:2,
+	child:Container(
+		width:10,
+		height:10,
+		color:Colors.red,
+
+)
+)
+
+so  this is how we can manage expanded widget with extra available space in Flutter.
+
+
+How to  add padding or  Margin in our widgets in Flutter
+----------------------------------------------------------------
+
+in order to manage space and margins we use padding widget and margin with other widgets to implement this all.
+
+body:Padding(
+	padding:EdggeInsets.only(top:11,left:34),
+	padding:EdgeInsets.all(11),
+	child:Text('MY name is Umair Mehmood'),
+)
+
+in order to  use margin feature we dont have margin feature available in all widgets
+but we have margin attribute in container so in order  to give margin to any
+widget first we will wrap that certain widget with container and then we will 
+add margin to them
+
+//Another important point whenever you are using margin or padding we will use "EdgeInsets" Class to give certain
+values to them respectievely
+
+Container(
+	//margin:EdgeInsets.all(5),
+	margin:EdgeInsets.only(left:5,right:10),//etc
+	child:Text('My name is Umair Mehmood'),
+)
+
+so this is how we  can apply padding and margin in flutter.
+
+
+List Tile  and how to include it in listview Builder
+-----------------------------------------------------------------
+
+As we can already studied list view above and we can create customs list items on that list
+bbut flutter provide us build in list tile that contain pre build design of list item
+like list we have in our chat apps whatsapp messenger that contain circular profile image
+title , message etc
+
+so this list tile can be used inside ListView.seperated it has some built in attributes like
+
+-->leading //here we can add circular image and whatever we want.
+-->title // title of list tile
+-->subtitle //line after title just like meesages in whatsapp after user name.
+-->trailing // like ending button where we can add button that can lead to options or whatever we want.
+
+code example
+-----------
+
+body: ListView.seperated(itemBuilder(context,index){
+		return  ListTile(
+			leading:Text('$index'),
+			title:Text("aarray[index]"),
+			subtitle:Text('Any message'),
+			trailing:Icon(Icons.add)
+		),
+	},
+	itemCount:array.length,
+	separatorBuilder:(context,index){
+		return Divider(height:10,thickness:2),
+	}
+	
+)
+
+//so this  is the most basic list type that we can use in our app so in order to achiver this design of app we
+can use list tile but if we want custom list items so we have to use listVIew with our own design.
+we can also add image to leading instead of text we want in our list tile.
+------------
+NOte
+---------------
+Flutter has biuild in icons class that we can use to get icons we can use inour designing
+so in order to use those icons we can use "Icon(Icons.add)" this is how we can acess icons in Flutter
+
+
+CircleAvatar
+--------------------
+we can do our image circular by adding its border radius half of its width but here we will study build in widget or
+cicular avatar provided by flutter to create circular images or avatar.
+
+
+if we want to load our image from network or database  then we will use network imgae
+but if we have our image saved in our folder we will use asset image
+
+body:CircleAvatar(
+	backgroundImage:AssetImage('path/to/Image.png'),
+	backgroundColor:Colors.green,
+)
+
+in order to increase size of CircleAvatar we will wrap it with container and give size to container as child of 
+container our circleAvatar will automatically adopt the dimensions of container
+
+body:Container(
+	width:100,
+	height:100,
+	child:CircleAvatar(
+		backgroundImage:AssetImage('path/to/Image.png'),
+		backgroundColor:Colors.transparent,
+	)
+)
+
+If we dont want to use container to increase  size of our circleAvatar we can use
+radius attribute of circleAcatar to increase its size
+
+body:CircleAvatar(
+	radius:20,
+	backgroundImage:AssetImage('path/to/Image.png'),
+	backgroundColor:Colors.green,
+	//we alse  haver attributes
+	minRadius:5,
+	maxRadius:10,
+	//we also have child attribute in circularAvatar .
+	child:Text('Profile Name')
+)
+
+we  can add  multiple  childs in it so we can manage and design multiple widgets in single
+circleAvatar.
+
+
+How to  use  custom fonts over text in Flutter
+-------------------------------------------------------------
+
+if we want to use custom fonts in our app we need to create a folder with named fon in our
+asset folder just like we did for images.
+
+so for downloading font go  to google and download the fonts you want to use in our
+app and than .ttf or .otf file of font addd this file to dont folder 
+
+and now uncomment the changes we make in punspec.yaml file
+
+and the get pubs to address all changes we made in our application.
+
+andd  then edit  address of font on asset option and give any name to font family 
+
+and now we are all set to use custom fonts in our app.
+
+so we can use that font as below
+
+body: Text(
+	'Umair mehmood',
+	style:TextStyle(fontFamily:'nameWeGaveToOurFont'),
+)
+
+-------------------------------------------------------
+
+Flutter Styles and Themes
+-------------------------------------
+Theme is the scheme we declared in a app and use that specific theme declared 
+in all our screen etc.
+
+we manage the theme at central point and we can use that specific theme once declared 
+throughout our app.
+
+So how we can manage that theme in our app
+
+we have studied above  that how we declare entry point of our app by creating class
+in this case while overriding abstract of build in class and returning materialUi
+we have a theme attribute
+
+in that specific theme attribute we can declare specific themes that we can use throughout
+our app so that theme attribute is the point which will be acessible throughout our app.
+
+we can declare it like
+
+@override
+Widget build(buildContext, context){
+	return MaterialApp(
+		title:"Flutter App",
+		debugShowCheckedModeBanner:false,
+		theme:ThemeData(
+			primarySwatch:Colors.blue
+		),
+		//in order to declare theme for font stylle  we can add text theme here and alsso others.
+		textTheme:TextTheme(
+		
+			headline1:TextStyle(fontSize:21,fontWeight:FontWeight.bold),
+			subtitle1:TextStyle(fontSize:10,fontWeight:FontWeight.bold),
+			//so in this way we have created two text themes named headline1 and subtitle1 now we can use 
+			//them globallly in our app wherever we want by just using there name.
+		) 
+
+		
+);
+	home:AppEntryPoint(),
+}
+
+Theme.of(context)//by using this keyword we can get whole theme we have declared in our
+		//app starting class.
+//now in order to get textTheme from this whole theme we can use
+
+Theme.of(context).textTheme.subtitle1 or Theme.of(context).textTheme.headline1
+
+//in this way we can manage this whole themes in our app
+
+
+
+// so in order to use these themes we can do this by...
+----------------------------------------------------------
+
+
+body:Text('Umair Mehmood',style:Theme.of(context).textTheme.headline1)
+
+so in this way we can make our theme central or globally in our app and if we make changes we  dont have to change every 
+aspect we can only make change in theme and it will be applied to whole application.
+
+but if we want  to use some additional styles  other than declaredin themeswe can do it like below
+
+-----Theme.of(context).textTheme.headline2.copyWith(color:Colors.green,etc)
+
+so  in this way we can manage themes in our app to overcome redundant data.
+
+
+we can also manage themes using another approach
+-------------------------------------------------
+create new folder named uihelper  or whatever you want in assets folder
+
+inside the folder create file with anyname.dart extension
+
+now inside this file you need to create a function that should return the themes we want to use in our
+app in order  to make code look neat
+
+after declaring this funciton we can use this function in our app wherever we want
+
+just like custom components we created in our react app  in order to create custom widgets
+or function that can be used again and agin in our app we can declare them in these like file and after proper
+addressing in .yaml file we can use and import these function where ever screen we need.
+
+ 
+insideDartFile.dart
+------------------------
+
+import 'package:flutter/cupertino.dart'
+
+
+//return type of function is textStyle.0
+
+TextStyle mytextStyle(){
+	return TextStyle(
+		fontSize:11,
+		fontWeight:FontWeight.bold(11),
+	)
+}
+
+in order to use that funcion in any of the screen first we will import  that
+function package and then we can use it in our screen
+
+import 'package:flutterjourney/ui_helper/util.dart';
+
+body:Text("Umair Mehmod",style:myTextStyle(),)
+
+in this way we use custom widgets that can be used all over app and we dont need to 
+write the reeatable code again and again and it will decrease code redundancy.
+
+
+in order to  made more changes we can accept attributes in our function so that 
+the design can be managed by attributes given by the user
+
+TextStyle mytextStyle({Color textColor:Colors.black,FontWeight fontweight fontWeight:FontWeight.normal}){
+
+	return TextStyle(
+		fontSize:11,
+		color:textColor,
+		fontWeight:fontweight ,
+)
+}
+
+
+//  so this above function is acception some attributes if user gave values
+to that attribute it will design widget according  to  that and if dont by default value
+declared in paranthesis will be applied.
+
+so we can use this function after importing as 
+
+body:Text('Umair Mehmood',style:mytextStyleI(textColor:orange,fontweight:FontWeight(22)))
+
+so this is how we can manage themes in our app
+---------------------------------
+46 videos done...
+
+Card Widget in Flutter
+-------------------------------
+
+For enhancing our app ui we might use card widget because it has many options and attributes
+that we can use
+
+one of the most important feature of card widget is that it can be elevated and create shadow around it.
+
+so in this way it give more enhanced UI experience.
+ 
+Card layout will always expect a child from us.
+
+body:Card(
+	shadowColor:Colors.blue,
+	elevation:20,
+	child:Text('This is my text')
+)
+
+
+So this is whole purpose of card we get a built in shadower elevated container
+that give our app good look.
+
+
+---------------------
+
+Getting User Input i Flutter
+------------------------------------------
+
+Usage of textField.
+
+practical implementation of textField  in Flutter.
+
+body:TextField()
+
+for decorating and setting dimensions of our textField we will make it  child of  container
+
+body:Container(
+	child:TextField(
+		enabled:false,
+		enabled:true
+		decoration:InputDecoration(
+			focusedBorder:OutlinedInputBorder(
+				borderSide:BorderSide(
+					color:Colors.red,
+				)//So when our input will be focused it border color will changed to red.
+			)
+			border:OutlineInputBorder(
+				borderRadius:BorderRadius.cricular(21)
+				borderSide:BorderSide(
+					color:Colors.orange,
+					width:1,
+				)			
+
+			),
+			suffixText:"WrongPassord",
+			suffixIcon:IconButton(
+				icon:Icon(Icons.remove_red_eye,color:Colors.orange),
+				onPressed(){}
+			)
+			//same is the case with prefix  only difference is it will appear in start of input field
+			instead of  end.
+		)
+)
+)
+
+
+In addition to focusedBorder and enabledBorder and DiableBorder also to enhance user experince
+and perform sertain actions.
+
+also  if we want to add some text below textField to show error or any other widget
+we can use suffix and prefixText opion of decoration.
+
+now we will see how we will manage the text entered by user and retrieve that specific text
+
+For doing  this  we will create below
+
+var EmailText = TextEditingController();
+
+TextField(
+	hintText:"Enter Email",
+	//hint Text is  just like placeholder
+	obsecureText:true,
+	//obsecure is used to show password in dots or hide password 
+	controller:EmailTetxt,
+	keyboardType:TextInputType.phone,
+	//This will automatically open number pad when textField wil be tapped.
+)
+
+so we can manage these textField values on button clicked
+
+ElevatedButton(onPressed:(){
+	String email = EmailText.text;
+	print("Email:$EmailText");
+})
+
+
+How to get Current Date and Time in Flutter
+----------------------------------------------
+
+Date and time code will be hard it will not change we will fetch data fromflutter
+class
+
+the class we can use for fetching date and time in Flutter is DateTime.now()
+
+var time = DateTime.now()
+
+
+body:Text('Current Time:$time')
+// it will display time when we open certain page
+where data and time is shown and only that time now If we want to get latest  timewe can refreh
+this  by using buttom  
+
+body:Column(
+	mainAxisAlignment:MainAxisAlignment.center,
+	children:[
+		Text('Current Time:$time'),
+		ElevatedButton(onPressed:(){
+			setState((){
+				// this function will always rebuild build widget in our stateful class so whenever it will build that build we will get our latest values in this way we can manage state
+			})//This setState will only be possible to use if we use statefulwidget and be a child of stateful class
+		})// for using setState we will extends our class to State<CurrentClassName>
+	]
+)
+
+
+we can also get date as folloe
+
+vat time = DateTime.now()
+
+{time.Day},{time.Year},{time.hour},{time.month},etc
+
+for getting more specific of dates we will use intelDartPackage
+
+wheneevere we have to use package or any other this in our flutter app we aill need
+toadd it to pubspec.yaml file do we will first add it to pubspec and then get going,
+
+first of all go to google and serach intl Flutter package from there copy version of package.
+
+and .yaml file under dependencies object paste that package
+
+and the pubs get
+
+and then use import line of that specific in screen or dart file where you want to 
+use it now after this we are all set to use that package.
+
+use of  intl package
+-------------------------
+
+Text('Dadte ${DateFormat('HMS').format(time)')
+
+date fomat has many other option like JMS ,HMS,ymmd etc which we can check in its prebuidld class date_format.dart.
+------------------------------------------------------------------------
+50 Videos Complete
+---------------------------------------------------------------------------
+for managing mutable states in flutter these code should be considered
+-------------------------------------------------------------------------
+
+
+class MyHomePage extends StatefulWidget {
+
+
+  @override
+  State<MyHomePage> createState() => _MyHomePageState();
+}
+
+class _MyHomePageState extends State<MyHomePage> {
+  int _counter = 0;
+
+  void _incrementCounter() {
+    _counter++;
+    setState(() {
+      
+    });
+  }
+
+
+===========================================================================
+51 # video
+
+--------------------------
+
+Showing DatePicker in flutter  application
+-----------------------------------------------------
+
+If we want user to pick or select date or time so for this purpose we can use datePicker 
+widget
+
+for example if we want to get user DOB we can use date picker in this scenerio.
+
+we can use button that will open date picker calender whenever user want to fill the form
+
+Code implementation of date picker is below:
+
+while creating datepicker we definitely need a button that should allow us to pick the date
+that user selected and save it according to format in to variables so in order to do this we will manage our
+button onPressed be like
+
+ElevatedButton(
+	onPressed:() async {
+			DateTime? datePicked =await showDatePicker(
+				context:context,
+				initialDate:DateTime.now(),//will show current date when formate is opened
+				firstDate:DateTime(1995),//range of calender from where it should start.
+				lastDate:DateTime(2023),//last date on calender that can be selected on range. 
+			);
+	}
+)
+
+Important things to remembered while using datetimepiceker
+==========================================================
+
+the button onPressed funtion would be asynchrounous because date time process can be lengthy and we dont want to interuptour main processing due to
+this issue.
+
+also the variable we have created is of type DateTime? null operator because user may be open datePicker bu dont select any date so in this case
+we use ?operator.
+
+also the variable datePicked is of type map or we can say object it will contain
+more information in it
+
+so in order to print object type variable we use ${variableName.instance} etc
+
+soin this way we can use date picker and in order to show it on screen we can use 
+setState function to manage immutable changes.
+
+we have another widget showTimePicker() first we have studied DatePicker now timePicker
+
+code for TimePicker
+-----------------------------
+
+ElevatedButton(
+	onPressed:() async {
+			DateTime? pickedTime=await showTimePicker(
+				context:context,
+				initialTime:TimeofDay.now(),//will show current date when formate is opened.
+				initialEntryMode:TimePickerEntryMode.input,//it will tell us how we can enter time by usinf
+										//arrows or by entering it.
+
+			);
+	}
+)
+
+================
+Flutter GridView
+-----------------------------
+
+Grid :  We want ti design a table in form of row or column so grid view can help us with this 
+type of design.
+
+Gridview  has main three main attribute
+
+one if which is count whenever we use count it asked for crossAxisCount cross axis  in grid
+is column horizontal and main axis is row  so we need to mention number of column how many widget we
+want in one of our row in cross axis count of grid.
+
+GridView.count(crossAxisCount:3)
+
+it will automatically adjust 3 widget in first of row and go to next line
+
+grid view  is  also scrollable just like list view
+
+so  in this way by using grid we can easily design our project in no time.
+
+In grid  view the widgets we add inside grd we dont need to mention there
+width or height as grid handle them in its own according to dimension given to it
+
+GridView.count(
+	crossAxisCount:3,
+	children:[
+		container:(color:Colors.red),
+		container:(color:Colors.red),
+		container:(color:Colors.red),
+		container:(color:Colors.red),
+		container:(color:Colors.red),
+		container:(color:Colors.red),
+	]
+	
+)
+
+
+in order  to handle height and widht of grid we can wrap it with container and
+provide width and height to container
+
+body:Container(
+
+	height:50,
+	width:50,
+	child:GridView.count(
+		crossAxisSpacing:22,
+		mainAxisSpacing:10,
+		crossAxisCount:3,
+		children:[
+			container:(color:Colors.red),
+			container:(color:Colors.red),
+			container:(color:Colors.red),
+			container:(color:Colors.red),
+			container:(color:Colors.red),
+			container:(color:Colors.red),
+	]
+	
+)
+
+)
+
+
+GridViewExtent
+------------------------------
+
+in count gridview the  number of widget w=in one row will remain same despite of 
+increase in screen width
+
+in count if screen is potraited it will show 3 widget and if it is rotated to landscape still
+it will get 3 widget in it.
+
+but if we want to manage the widget according to width of screen if screen width is wider
+it should settle more widget in it and so on  for these purposes we will use GridViewExtent
+
+GridView.extent(
+		maxCrossAxisExtent:100
+		mainAxisSpacing:10,
+		crossAxisCount:3,
+		children:[
+			container:(color:Colors.red),
+			container:(color:Colors.red),
+			container:(color:Colors.red),
+			container:(color:Colors.red),
+			container:(color:Colors.red),
+			container:(color:Colors.red),
+	]
+	
+)
+
+
+// so in this case we have 6 containers inside gridview it will divide 100 with 6
+and manage widget in it accordingly.
+
+so gridViewExtent will help  us to keep our child widget size of gridview to be fixed even
+our screen is widht is more or less. 
+
+but  in here we are giving fixed number or harcode number of widget inside my
+GridView but what when we are fetching data from database in these scenerio
+just like in ListView  here we will also use gridView Builder
+
+body:GridView.builder(itemBuilder: (context,index){
+	return Container(color:ArrayColors[index],);
+},
+	itemCount:ArrayColors.length,
+	gridDelegate:SilverGrid(
+		// here we can take crossAxisCount forfixed widget or maxCrossAxisExtent:100 for widgth dependence  of screen
+		crossAxisCount:3
+		mainAxisSpacing:11,
+		crossAxisSpacing:11,
+	)
+
+// so it will render all the item and data that is stored in array
+)
+
+
+Callback Funtion in Flutter or dart
+============================================
+
+we create a certain function and pass  that function in argument of another function
+
+CallBack function are just like promisses when certain acion is done or fullfilled what
+to do next can be done using callback functions callback function tell us what
+to do next after certain action.
+
+
+.then(){}.catch(){}//it is also called promises and  call back in MEEN or node  javascript 
+.
+code implementationof callback function
+------------------------------------------------
+in flutter we can create call back as
+
+
+before build widget we can create  a function
+
+voib MyButtonClickedFunction(){
+	pritn("BUtton is clicked");
+}
+
+
+body:ElevatedButton(
+	child:Text('Click me'),
+	onPressed: MyButtonClickedFunction,  //so here we have passed function to onPressed optio
+						//it is know as call back funcition in Flutter.
+
+)
+
+
+Custom Widget in Flutter
+======================================
+
+Custom widget is one we create on our own based  on our needs and we can use that widget again
+again in our app so other that default widget we can craete our own custom widgets
+with our own needs.
+
+if  we divide our app in cutom widgets and parts it  will become easy for us
+to test and identify errors in our app after building it.
+
+and it will be more easy to understand the code.
+
+so in order to divide our code in to widgets we can create classes for our cutom widget 
+and call those classes in scaffold widget
+
+mainclass
+
+class myPage entends statelessWidget{
+	@override
+	widget build(BuildContext context){
+		return Scaffold(
+			appBar:AppBar(title:Text("APP Title"))
+			
+
+			body:Column(
+				children:[
+					Container(
+						height:10,
+						width:20,
+						color:Colors.red,
+					),
+					Container(
+						height:10,
+						width:20,
+						color:Colors.red,
+					),
+					Container(
+						height:10,
+						width:20,
+						color:Colors.red,
+					),
+					Container(
+						height:10,
+						width:20,
+						color:Colors.red,
+					),
+				]
+)
+		)
+	}
+
+}
+
+
+so in order to create custom widget of each of above container inside column we can do
+this.
+
+class container1 extends statelessWidgte{
+	@override
+	widget build(BuildContext context){
+		return  Container(
+				height:10,
+				width:20,
+				color:Colors.red,
+			),
+
+	}
+
+}
+
+class container2 extends statelessWidgte{
+	@override
+	widget build(BuildContext context){
+		return  Container(
+				height:10,
+				width:20,
+				color:Colors.red,
+			),
+
+	}
+
+}class container3 extends statelessWidgte{
+	@override
+	widget build(BuildContext context){
+		return  Container(
+				height:10,
+				width:20,
+				color:Colors.red,
+			),
+
+	}
+
+}class container4 extends statelessWidgte{
+	@override
+	widget build(BuildContext context){
+		return  Container(
+				height:10,
+				width:20,
+				color:Colors.red,
+			),
+
+	}
+
+}
+
+
+now we can create object of these custom widget and just call these classes in main class
+
+so main class will be like
+
+
+class mainClass  extends statlessWidget{
+	@override
+	widget build(BuildContext context){
+		appBar: AppBar(title:Text('This  is  my title')),
+		body:Column(
+			container1(),
+			container2(),
+			container3(),
+			container4(),
+		)
+	}
+}
+
+//so in this way we can create custom widgets we can also createa these classes in another
+dart file and can import in main file in order to use these classes.
+
+in order to  craeate custom widget in another filer and  import it
+------------------------------------------------------------------
+
+customWidget.dart
+-------------------
+// all classes we have create in our lib file will be acessible in our main.dart file.
+
+
+import 'package:flutter/cupertino.dart';
+import  'package:flutter/material.dart';
+
+class RoundedButton extends statelessWidget{
+	final String btnname;
+	final Icon? icon;
+	final Color? bgColor;
+	final TextStyle? textStyle;
+	final VoidCallback? callBack;
+
+//now here we will create constructor so whenever our class object is created we should reeive
+// these values.
+
+//constructor
+	RoundedButton({required this.btnname,this.icon,this.bgColor = Colors.blue,this.textStyle,this.callBack}){
+//if we declare value  here these will be treated as default  if user dont provide any values  then these default values will be funcitonal.
+	}
+	@override
+	Widget build(BuildContext context){
+	return ElevatedButton(
+		onPressed:(){
+			callBack!();
+		}
+	),
+	child:icon!=null ?Row(
+		children:[icon!,Text(btnName,style:textStyle)]
+	),
+	style:ElevatedButton.styleForm(
+		primary:bgColor,
+		shadowColor:bgColor,
+		shape:RoundedRectangleBorder(
+			borderRadius.only(topRight:Radius.circular(21)),
+			borderRadius.only(bottomLeft:Radius.circular(21))
+		)
+	)
+	
+}
+}
+
+
+mian.dart
+------------
+
+body:RoundedButton(btnName:'login',icon:Icon(Icons.lock),callBack:(){print("Button is clicked");})
+
+//so in this way custom widget works
+---------------------------------------
+
+Stack widget in Flutter
+==================================
+
+In Stack widget we can stack multiple widget and create pile  of widget in flutter
+adn can use that stack as a widget.
+
+A Widget that positions its children relative to the edges of its box,
+
+
+exampleif we have image and I want to add some text on that image in this case we can use
+stack widget to stack text on that certain image.
+
+in css we have used z-index where we can make first component z-index:-1 and the component
+we want to put on that component we can make it z-index: 1 in this way we can place
+new component on parent component
+
+with help of stack we can over lap multiple components on each other so stack
+is very important component of flutter.
+
+we can also example of background  image we place background image and place other 
+widget on background image same is the case of stack widget but in this case
+by using stack widget we can create any of the widget as backgroun widget of another widget.
+
+code implementation of stack
+----------------------------------
+
+body: Stack(
+	children:[
+		Container:(
+			width :100,
+			height:100,
+
+			color:Colors.red,
+		),
+		Container:(
+			width :60,
+			height:60,
+
+			color:Colors.blue,
+		),
+		Text:('My Name is Umair Mehmood')
+		
+]
+)
+
+
+
+
+
+in stack the first declared child act as parent and other declared are child with sequence they
+are declared.
+
+so  in this way wwe can create different complex and futuristic desing also using positioned
+widget aalong with Stack
+
+
+============================
+
+Positioned Widget
+------------------
+
+important  widget in flutter for positioning we can giver position to ceratin container by using 
+this specific widget.
+
+Positioned(
+	top:10,
+	left:10,
+	right:10,
+	bottom:20,
+	child:Container(
+		hieght:10,
+		width:10,
+		color:Colors.red,
+	)
+)
+
+=========================
+
+Wrap Widget in flutter
+----------------------------------
+
+if our widget extent the width of our screen and we dont want to use scroll view
+we want our all widgets in a screen to be visible in that case we will use 
+Wrap Widget.
+
+we want our widget to get shift to next line if it overcome the width of screen so we will
+settle it in other lines using wrap widget.
+
+so wrap widget can be used as
+
+body:Wrap(
+	direction:Axis.vertical or direction:Axis.horizonral
+	spacinf:11,
+	runSpacing:11,
+	alignment:WrapAlignment.center or alignment:WrapAlignment.spaceBetween or alignment:WrapAlignment.evenly
+	children:[
+		container:(
+			width:10,
+			height:10,
+			color:Colors.red
+		),
+		container:(
+			width:10,
+			height:10,
+			color:Colors.red
+		),
+		container:(
+			width:10,
+			height:10,
+			color:Colors.red
+		),
+		container:(
+			width:10,
+			height:10,
+			color:Colors.red
+		),
+		container:(
+			width:10,
+			height:10,
+			color:Colors.red
+		),
+	]
+
+)// so in this wrap if element cannot be adjusted in screen width instead of making view scrollable
+it will shift extra widgets in to next lines and so on.
+
+for max width max height we can use "double.infinity"
+----------------------------------------------------------
+
+
+SizeBox in Flutter
+------------------------------
+whenever we need  to give width and height to our widget we wrap it with container
+and provide width and height to conatiner to manage dimension of child widget.
+
+container has another atrribute names decoration and many other
+but if we want use container only to give width and height instead of using container 
+we can use sizedbox
+
+sizedbox help us to set  dimension of child widget and also we can use it to
+give margins.
+
+sized boxx  implementation
+-------------------------------
+
+body:SizedBox(
+	width:280,
+	hwight:50,
+	child:ElevatedBUtton(
+		onPressed:(){},
+		child:Text('Hello Bro')
+)
+)
+
+SizedBox.expand(// in expaand  we will get max width and we dont want to give
+width to our sizes box)
+
+SizedBox.Shrink(//This  is will get min height and width)
+
+but how to declare max height and width and minimum for this we use ConstrainedBox and make  sized box
+chid of Constrained boc
+
+body:ConstrainedBox(
+	minWidth:100,
+	minHeight:20,
+	maxHeight:80,
+	maxWidth:400,
+	child:SizedBox.Shrink(
+		ElevatedButton()
+	)//in this case sized box will pick min height and width from constrained boxs.
+
+)
+
+SizedBox.square(
+	dimension:10,
+	//it will only accept dimension not width and height
+)
+
+Every widget dont have margin attribute and  if we want to give gap between
+widgets we can use sizedBox between them and we can provide width to sized box and
+can have space between widgets.
+
+----------------------
+
+Rich Text in Flutter
+=============================
+
+Rich Text mean if I have text Umair Mehmood Umair is  of differnt font and design and
+Mehmood is of different text and design.
+
+we  can manage them by creating multiple Text() component but that is not good aproach 
+for this we use rich text
+
+
+code example of rich text...
+
+body:RichText(
+	text:TextSpan(
+		style:TextStyle(color:Colors.grey,fontSize:21)// default style of all text span.
+		children:[
+			TextSpan(text:'Hello'),
+			TextSpan(text:'World',style:TextStyle(fontWeight:FontWeight.bold)),
+]
+)
+
+)
+//In this  way we can manage different text with different styles
+
+
+Icons in Flutter
+-------------------------------------
+body:Icon(
+	Icons.defaultFlutterIconName,
+	size:50,
+	color:Colors.red,
+)
+==============================
+
+Font Awesome Icon Library in Flutter
+-------------------------------------------
+
+this is flutter library for additional icons we can find this library information
+version in flutter.dev and otheer.
+
+So we need to add this package version in dependencies and use import statement in dart
+file where we need to usedd these  icons to gert started to new library
+of icons in Flutter APP.
+
+copy Awesome icon library version from flutter.dev and then go to pubspec.yaml
+file find dependencies section paste this dependencies of awesome icon version there to add to 
+packages.
+ aftre importing package noew we will see code implementation
+
+code 
+
+body:FaIcon(FontAwesomeIcons.amazon,color:Colors.orange,size:15)
+
+-----------------------------------------
+
+Positioned Widget
+=====================
+
+code  for positioned widget is present in Stack widget ection above.
+
+------------------------
+
+Elevated button design code
+========================================
+ElevatedButton(
+  onPressed: () {
+    // Handle button tap
+  },
+  child: Text('Elevated Button'),
+  style: ButtonStyle(
+    backgroundColor: MaterialStateProperty.all<Color>(Colors.blue), // Background color
+    foregroundColor: MaterialStateProperty.all<Color>(Colors.white), // Text color
+    padding: MaterialStateProperty.all<EdgeInsetsGeometry>(EdgeInsets.all(16)), // Padding
+    textStyle: MaterialStateProperty.all<TextStyle>(TextStyle(fontSize: 20)), // Text style
+    elevation: MaterialStateProperty.all<double>(10), // Elevation
+    shape: MaterialStateProperty.all<RoundedRectangleBorder>(
+      RoundedRectangleBorder(
+        borderRadius: BorderRadius.circular(20), // Rounded corners
+        // You can also use other shapes like StadiumBorder(), ContinuousRectangleBorder(), etc.
+      ),
+    ),
+  ),
+)
+
+
+65 videos completed..
+--------------------------s
+
+Statefull and Stateless widget along with logic in Flutter
+================================================================
+
+Basic code of stateless  and statedul is already explained above here we willcreate
+a small calculator app to check statless and statefull widgets
+
+
+I will create my calculator app on my own soon...
+-------------------------------------------------------------
+
+Constrained Box
+=================================
+
+The constrained box is used for providing contraints to child widgets it constraints contain
+
+minWidth
+maxWidth
+miHeight
+maxHeight
+
+contrained box can have only one child if we want to add more children then in this case
+we can make coulumn row or grid  child of contrained box and add further elements in them.
+
+if our data exceed the max width or height we can also show shadow or other represtation 
+to show that box contain more data but cannot be shown.
+ 
+code implementation of contrained box
+-----------------------------------------
+
+ConstrainedBox(
+
+	constraints:BoxConstraints(
+		maxWidth:200,
+		maxHeight:200,
+		minWidth:200,
+		minHeight:200,
+		child:Text('Hello World',
+			style:TextStyle(fontSize:20)
+			overflow:TextOverflow.fade,//this will be shown when text exceed maxWidth,
+
+		)
+	)
+)
+
+---------------------
+
+Switching From one Screen to Another or screen Navigation
+============================================================
+
+we need to create multiple screens in order to make navigations between screens.
+
+so for creating another screen other than main.dart file screen either we can create another class
+in main.dart file or create another .dart file and use that class in main .dart file
+
+main.dart file screen
+-------------------------------
+
+class mainClass extends statelessWidget{
+	@override
+	Widget build(BuildContext context){
+		return Scaffold(
+			appBar:AppBar(title:Text ('My name is umair')),
+			body:
+		)
+	}
+} 
+
+
+IntroScreen.dart screen code
+----------------------------------
+
+import 'package:flutter/material.dart';
+
+
+class IntroScreen extends StatelessWidget{
+	@override
+	Widget build(BuildContext context){
+		return Scaffold(
+			appBar:AppBar(
+				title:Text('Intro'),
+			),
+			build:Column(
+				children:[
+					Text:('Welcome',style:TextStyle(fontSize:21,fontWeight:FontWeight.bold,)),
+					ElevatedButton(child:Text('Next'),
+						onPressed:(){
+							//inorder to navigate to mainClass from this screen we will Write
+							//below code
+							Navigator.push(context,
+								MaterialPageRoute(builder:(context){
+									return mainClass();
+								})
+							)
+									
+						}
+					)
+				],
+			)
+		)
+
+}
+
+}
+
+now in MaterialApp Class provide home:IntroScree() //now our app will be started from IntroScreen
+
+
+Navigation in Flutter also same concept as we performed in REaact whenever
+we put screeen in navigation it create stack of screens.
+
+navigator.push will push the screen we are navigating to in to stack
+if we got to further next screen it will push that screen into stack as well
+now if we press backbutton it will pop first screen from stack and then of we again 
+press back it will pop the first screen we navigate to this is how this navigation works
+in mobile applicaition
+
+removing screens like login screen that we dont want to visit after first timefrom stack
+
+for removing screen we dont want to visit from navigation stack we can use stack.replace() function
+to replace that certain screen from stack so we cannot navigate back to that app.
+
+
+---------------------------------
+
+Spash Screen  (Starting Screen) that remain for about 3s when we open app
+=======================================================================
+
+Splash screen has two roles one if user start the app and there is some data fetching
+from database splash screen can show some loading content and if we want to show 
+app logo and other design then we can also use splash screen.
+splash screen will not have appBar
+
+so we will not include app bar in scaffold widget
+
+import 'package:flutter/material.dart';
+
+class SplashScreen extends StatefulWidget{
+	@override
+	State<SplashScreen> createState()=> _SplahScreenState
+}
+
+class _SplahScreenState extends State<SplashScreen>{
+	
+	@override
+	void initState(){
+		super.initState();
+
+		Timer(Duration(seconds:2),//callbackFuntion(){
+			Navigator.pushReplacement(context,MaterialPageRoute(builder:(context)=>screenName(),))
+		})	
+
+
+		//pushReplacement function is used for replacing current screen in stack with new screen so we
+		//cannot visist current screen again just like we dont want to visit splash screen address of  new screen should 
+		//be given in second parameter of pushReplacement just we give above 
+	}
+
+	@overrid
+	Widget build(BuildContext context){
+	return Scaffold(
+		body:Container(
+			color:Colors.blue,
+			child:Text('SplashScreen'),
+		)
+	)
+}
+}
+Timer Class Flutter
+--------------
+now we want to move to next screen from splash screen if we want to move aautomatically
+from spash screen to next screen within 5 sec or more or less  without performing any 
+action on screen in thiss case we can use timerClass of Flutter inside that timer 
+function that will execute after fix amount of time we can provide code for moving in to 
+next screen this is how we can create splash screen.
+
+
+init funtion in classes
+-------------------------
+whenever our class will build first starting point or function where our app start
+is 'init' so we can call that timer class function in 'init' funtion.
+ 
+
+------------------------------------------
+
+Passing data or  parameter params from oner screen to another
+================================================================
+
+we  can get data from user on runtime from textfield and on navigating from one screen to another
+we can carry that data from that screen and can move to next screen with that ceratin data
+and can use that data in new screen.
+
+code for doing this is below
+---------------------------------
+
+we can create a var in first screen from which we are carrying the data
+
+firstscreen
+-------------
+
+var nameController = TextEditingController(),
+//entered data will be stored in nameController variable.
+
+TextField(
+	controller :nameController
+)
+Navigator.push(context,
+	MaterialPageRoute(builder:(context){
+		return seconScreen(nameController.text.toString());//pass variable
+
+
+
+seondScreen
+-------------------
+var paramsVariable,
+
+Contructor
+secondScreen(this.paramsVariable);
+
+we can also do this
+
+secondScreen(var variable){
+	this.paramsVariable = varaibale;
+	
+}
+//this firstScreen constructor will pass values to these paranthesis and we can
+save them in any variable just like this.paramsVaariable
+
+now we can use this values
+
+Text(paramsVariable),
+
+
+
+-----------------------------
+
+
+Adding Range Slider in Flutter app
+================================
+RangeValues values = RangeValues(0,1)
+
+RangeLabels  labels1 = RangeLabels(values.start.toString(),values.end.toString())
+
+body:Center(
+	child:RangeSlider(
+		activeColor:Colors.green,
+		inactiveColor:Colors.green.shade50,
+		values:values,
+		lables:labels1 ,//it  will show text on bar indicator
+		division:10,//it will allow us with how many difference can can move our slider.
+		min:0,
+		max,100,
+		onChanged:(newValue){
+			values = newValue;//this will store new range values in values 
+			print('${newValue.start},${newValue.end}');// this is how we can get values what use has selectd
+
+			setState((){}) //for updating Ui
+		},
+
+	)
+)
+
+
+so in this  way we can manage and add range slider in our app 
+different purposes.
+
+--------------------------------
+
+HOw to animate Container in Flutter
+===========================================
+Animation is very useful for better design of the app 
+
+animating the container in flutter has two many ways but here we will discuss
+about animated container in flutter.
+
+we can apply animation on different scenerio
+
+->that our anomation will after certain amount of time
+->our animation will run after certain scrolling 
+-> When certaain event occur then run certain animation.
+etc.Column
+
+//In animated containeer when we change width and size of button it goes from certain
+width and heoght to another in instant time without animation 
+
+but in animated contained changes on special conditions will occur with anomations.
+ 
+we have attribute curves in any type  of animation that we can use to chane speed of
+animation and enhance our animation.
+ 
+code implementation
+------------------------
+var  _width = 200;
+var _height = 200;
+
+
+body:Column(
+	children:[
+		AnimatedContainer(
+			width:_width,
+			height:_height,
+			curve:Curves.fastOutSlowIn,
+			curve:Curves.slowInMiddle,
+			curve:Curves.bounceIn,//gives bouncy effect
+			curve:Curves.etc,
+			duration:Duration(seconds:2),
+		),
+		ElevatedButton(
+			onPressed:(){
+				_width = 100,
+				_height = 100,
+				seState((){})// so this change in in width and height will occur with animation in animated container
+
+			},
+			child:Text:('My Button'),
+		)
+	]
+
+)
+ 
+Animated containeer has also many other options that we can experience by implementing
+it.
+
+------------
+
+Animated Opacity
+========================
+
+what is opacity
+what is alpha
+
+anything visibility depends upon alpha or opacity if certain widget is visible or not
+visible it has some value of alpha that decides the visibility of that widget.
+
+opacity can also be linked with brightness like we increase ir decrease brightness
+it can be done by opacity animation for screen to be fade  awway and get brighten.
+
+animation can also be managed by state management so dont forget to manage state here.\
+
+coding implementation
+-----------------------
+var myOpacity = 1.0;
+
+
+Column(
+	children:[
+		AnimatedOpacity(
+			opacity:myOpacity,
+			duration:Duration(seconds:2),
+			curve:Curves.elasticOut,
+			curve:Curves.elasticInOut,
+			
+			child:Container(
+				width:200,
+				height:100,
+				color:Colors.blue,
+	
+			)
+		),
+		ElevatedButton(
+			onPressed:(){
+				myOpacity = 0.0;
+				setState((){});
+			}
+			child:Text('My Button'),
+			
+		)
+]
+)
+
+on button press this animation will hide my conatiner by fading its opacity in animation
+so container dont gets fade away instantlt this is how we can use animation opacity 
+it has maany other features we can experience them by implementing it.
+
+----------------------------
+RadioListTile Radio Button
+---------------------------------
+
+  RadioListTile(value: 1, groupValue: radioButtonGroupValue, onChanged: radioButtonFunction),
+  
+ RadioListTile(value: 2, groupValue: radioButtonGroupValue, onChanged: radioButtonFunction,title: Text('Height in feet'),),
