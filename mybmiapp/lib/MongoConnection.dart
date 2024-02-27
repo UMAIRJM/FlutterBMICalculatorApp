@@ -1,13 +1,12 @@
-
-
 import 'package:mongo_dart/mongo_dart.dart';
 
 class  MongoConnection{
-  MongoConnection(){
-    mongoDbConnectionFunction();
+   MongoConnection(){
+     mongoDbConnectionFunction();
   }
-  static var exception ;
-  static var exception2 ;
+  static var exception;
+  static var exception2;
+  
   void  mongoDbConnectionFunction () async{
     final db = Db('mongodb+srv://umairkmehmood789:umair789@cluster0.pkhdli3.mongodb.net/BmiCalulator?retryWrites=true&w=majority');
      
